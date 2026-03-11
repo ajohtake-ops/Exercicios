@@ -10,32 +10,93 @@
 </head>
 
 <body>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-1">
-                <label for="codigo" class="form-label">Código</label>
-                <input type="number" class="form-control" id="codigo" maxlength="2">
-            </div>
-            <div class="col">
-                <label for="nome" class="form-label">Nome</label>
-                <input type="text" class="form-control" id="nome" placeholder="João">
-            </div>
-            <div class="col">
-                <div class="mb-3">
-                    <label for="exampleFormControlInput1" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="exampleFormControlInput1"
-                        placeholder="cliente@email.com">
+    <form>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-1">
+                    <fieldset disabled>
+                        <label for="codigo" class="form-label">Código</label>
+                        <input type="number" class="form-control" id="codigo" maxlength="2" placeholder="32">
+                    </fieldset>
+                </div>
+                <div class="col">
+                    <label for="nome" class="form-label">Nome</label>
+                    <input type="text" class="form-control" id="nome" placeholder="João">
+                </div>
+                <div class="col">
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1"
+                            placeholder="cliente@email.com">
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <label for="nome" class="form-label">CPF</label>
+                    <input type="number" class="form-control" id="nome" maxlength="11">
                 </div>
             </div>
-            <div class="col-md-2">
-                <label for="nome" class="form-label">CPF</label>
-                <input type="number" class="form-control" id="nome" maxlength="11">
+
+            <div class="row">
+                <div class="col-md-2">
+                    <label for="cel" class="form-label">Número de celular</label>
+                    <input type="number" class="form-control" id="cel" maxlength="11" placeholder="Número do celular">
+                </div>
+                <div class="col-md-2">
+                    <label for="tel" class="form-label">Número de telefone fixo</label>
+                    <input type="number" class="form-control" id="tel" maxlength="11" placeholder="Número de telefone">
+                </div>
+                <div class="col-md-2">
+                    <label for="cep" class="form-label">CEP</label>
+                    <input type="number" class="form-control" id="cep" maxlength="11" placeholder="ex: 88308070">
+                </div>
+                <div class="col-md-2">
+                    <label for="logradouro" class="form-label">Logradouro</label>
+                    <input type="text" class="form-control" id="logradouro" placeholder="ex: Rua 1400, ...">
+                </div>
+                <div class="col-md-1">
+                    <label for="numero" class="form-label">Número</label>
+                    <input type="number" class="form-control" id="numero" placeholder="n">
+                </div>
+                <div class="col">
+                    <label for="bairro" class="form-label">Bairro</label>
+                    <input type="text" class="form-control" id="bairro" placeholder="Bairro">
+                </div>
             </div>
+
+            <div class="row">
+                <div class="col-md-2">
+                    <label for="bairro" class="form-label">Cidade</label>
+                    <input type="text" class="form-control" id="bairro" placeholder="Bairro">
+                </div>
+                <div class="col-md-1">
+                    <label for="uf" class="form-label">UF</label>
+                    <input type="text" class="form-control" id="uf" placeholder="Bairro">
+                </div>
+                <div class="col-md-2">
+                    <label for="status" class="form-label">Status</label>
+                    <select class="form-select" aria-label="status">
+                        <option selected>Selecione</option>
+                        <option value="1">Solteiro(a)</option>
+                        <option value="2">Namorando</option>
+                        <option value="3">Casado(a)</option>
+                        <option value="4">Viúvo(a)</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="row" style="float: right; margin-top: 10px;;">
+                <div class="col">
+                    <input class="btn btn-danger" type="reset" value="Resetar">
+                </div>
+                <div class="col">
+                    <a class="btn btn-success" href="ex3.html" role="button">Pŕoximo</a>
+                </div>
+            </div>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+                crossorigin="anonymous"></script>
         </div>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-            crossorigin="anonymous"></script>
-    </div>
+    </form>
 </body>
 
 </html>
