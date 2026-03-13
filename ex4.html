@@ -21,22 +21,22 @@
             <div class="row">
                 <div class="col">
                     <label for="nome" class="form-label">Nome:</label>
-                    <input type="text" class="form-control" id="nome" placeholder="Informe o nome">
+                    <input type="text" class="form-control" id="nome" placeholder="Informe o nome" required>  
                 </div>
             </div>
 
             <div class="row">
                 <div class="col-md-2">
                     <label for="cpf" class="form-label">CPF:</label>
-                    <input type="number" class="form-control" id="cpf" placeholder="Informe o CPF" maxlength="11">
+                    <input type="number" class="form-control" id="cpf" placeholder="Informe o CPF" maxlength="11" required>
                 </div>
                 <div class="col">
                     <label class="form-label" for="endereco">Endereço:</label>
-                    <input type="text" class="form-control" id="endereco" placeholder="Informe o endereço">
+                    <input type="text" class="form-control" id="endereco" placeholder="Informe o endereço" required>
                 </div>
                 <div class="col-md-2">
                     <label for="nivel" class="form-label">Nível:</label>
-                    <select class="form-select" aria-label="status">
+                    <select class="form-select" aria-label="status" required>
                         <option selected>-</option>
                         <option value="1">0</option>
                         <option value="2">1</option>
@@ -50,15 +50,15 @@
             <div class="row">
                 <div class="col">
                     <label class="form-label" for="email">Email:</label>
-                    <input type="email" class="form-control" placeholder="Informe o email">
+                    <input type="email" class="form-control" placeholder="Informe o email" required>
                 </div>
                 <div class="col-md-3">
                     <label class="form-label" for="senha">Senha:</label>
-                    <input class="form-control" id="senha" type="password" placeholder="Informe a senha">
+                    <input class="form-control" id="senha" type="password" placeholder="Informe a senha" required>
                 </div>
                 <div class="col-md-2">
                     <label class="form-label" for="status">Status</label>
-                    <select class="form-select" aria-label="status">
+                    <select class="form-select" aria-label="status" required>
                         <option selected>-</option>
                         <option value="1">Solteiro(a)</option>
                         <option value="2">Namorando</option>
@@ -71,10 +71,10 @@
 
             <div class="row" style="float: right; margin-top: 10px;;">
                 <div class="col">
-                    <input class="btn btn-success" type="submit" value="Enviar">
+                    <input class="btn btn-success" type="submit" value="Enviar" required>
                 </div>
                 <div class="col">
-                    <input class="btn btn-outline-secondary" type="reset" value="Cancelar">
+                    <input class="btn btn-outline-secondary" type="reset" value="Cancelar" required>
                 </div>
             </div>
 
